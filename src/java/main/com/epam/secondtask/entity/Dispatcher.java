@@ -16,8 +16,7 @@ public class Dispatcher implements Runnable {
 
     private Dispatcher() {
     }
-
-
+    
     public void run() {
         while (!clientList.isEmpty()) {
             int clientPosition = clientList.get(0).getClientPosition();
@@ -30,8 +29,8 @@ public class Dispatcher implements Runnable {
             clientList.remove(0);
             closerCar.setTime(Math.abs(clientPosition - closerCar.getPosition() * 115));
             closerCar.setWithPassenger(true);
-            logger.info("Car on the way"+closerCar.toString());
-            Thread thread=new Thread(closerCar);
+            logger.info("Car on the way" + closerCar.toString());
+            Thread thread = new Thread(closerCar);
             thread.start();
         }
     }

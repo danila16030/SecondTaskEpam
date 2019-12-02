@@ -3,7 +3,7 @@ package main.com.epam.secondtask.entity;
 
 import static java.lang.Thread.sleep;
 
-public class Car implements Runnable,UberUsers {
+public class Car implements Runnable, UberUsers {
     private int position;
     private boolean withPassenger;
     private int time;
@@ -60,8 +60,8 @@ public class Car implements Runnable,UberUsers {
 
     @Override
     public void run() {
-        withPassenger=true;
-        int sleepTime=time;
+        withPassenger = true;
+        int sleepTime = time;
         System.out.println("Поехал");
         try {
             sleep(sleepTime);

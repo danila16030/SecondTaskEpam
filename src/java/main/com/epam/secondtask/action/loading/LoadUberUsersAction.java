@@ -26,7 +26,7 @@ public class LoadUberUsersAction {
 
     public void loadUsersFromFile(String filePath) throws FileIsEmptyException,
             TxtFileNotFoundException {
-        logger.info("loading figures from " + filePath);
+        logger.info("loading users from " + filePath);
         List<String> listOfLines = new ArrayList<>();
         boolean flag = checkFile(filePath);
         if (flag) {
@@ -46,7 +46,7 @@ public class LoadUberUsersAction {
                     Client client = createUserFromLine.getClientFromLine(line);
                     Dispatcher.getClientList().add(client);
                 } else {
-                    logger.warn("incorrect line in position "+(listOfLines.lastIndexOf(line)+1));
+                    logger.warn("incorrect line in position " + (listOfLines.lastIndexOf(line) + 1));
                 }
             }
         }

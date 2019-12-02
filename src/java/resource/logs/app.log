@@ -1,4 +1,0 @@
-21:46:42.740 [main] INFO  epam.secondtask.action.loading.LoadUberUsersAction - loading figures from data/info.txt
-21:46:42.767 [main] INFO  com.epam.secondtask.entity.Dispatcher - Car on the wayCar{position=102, withPassenger=true, time=11632}
-21:46:42.767 [main] INFO  com.epam.secondtask.entity.Dispatcher - Car on the wayCar{position=102, withPassenger=true, time=11595}
-21:46:42.768 [main] INFO  com.epam.secondtask.entity.Dispatcher - Car on the wayCar{position=11, withPassenger=true, time=1260}

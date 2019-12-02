@@ -18,7 +18,7 @@ public class Dispatcher implements Runnable {
     }
 
 
-    public void run() {//будет потоком
+    public void run() {
         while (!clientList.isEmpty()) {
             int clientPosition = clientList.get(0).getClientPosition();
             for (Car car : carList) {

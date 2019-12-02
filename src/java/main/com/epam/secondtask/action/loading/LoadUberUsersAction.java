@@ -20,7 +20,7 @@ import java.util.stream.Stream;
 
 public class LoadUberUsersAction {
     private static Logger logger = LogManager.getLogger();
-    private static CreateUberUserFromLineAction createFigureFromLine = new CreateUberUserFromLineAction();
+    private static CreateUberUserFromLineAction createUserFromLine = new CreateUberUserFromLineAction();
     private static LineValidationAction lineValidationAction = new LineValidationAction();
 
 
@@ -39,11 +39,11 @@ public class LoadUberUsersAction {
                 throw new FileIsEmptyException(ex);
             }
             for (String line : listOfLines) {
-                if (lineValidationAction.clientComplianceCheck(line, SetOfPatterns.CAR_PATTERN)) {
-                    Car car = createFigureFromLine.getPointFromLine(line);
+                if (lineValidationAction.carComplianceCheck(line, SetOfPatterns.CAR_PATTERN)) {
+                    Car car = createUserFromLine.getCarFromLine(line);
                     Dispatcher.getCarList().add(car);
                 } else if (lineValidationAction.clientComplianceCheck(line, SetOfPatterns.CLIENT_PATTERN)) {
-                    Client client = createFigureFromLine.getCircleFromLine(line);
+                    Client client = createUserFromLine.getClientFromLine(line);
                     Dispatcher.getClientList().add(client);
                 } else {
                     logger.warn("incorrect line in position "+(listOfLines.lastIndexOf(line)+1));

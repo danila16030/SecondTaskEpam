@@ -1,4 +1,4 @@
-package java.com.epam.secondtask.exception;
+package com.epam.secondtask.exception;
 
 public class TxtFileNotFoundException extends Exception {
     public TxtFileNotFoundException() {

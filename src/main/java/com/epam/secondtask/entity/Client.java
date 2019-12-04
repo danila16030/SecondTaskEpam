@@ -1,4 +1,4 @@
-package java.com.epam.secondtask.entity;
+package com.epam.secondtask.entity;
 
 public class Client implements UberUsers {
     private int clientPosition;
@@ -14,18 +14,6 @@ public class Client implements UberUsers {
         return clientPosition;
     }
 
-    public int getDestinationPosition() {
-        return destinationPosition;
-    }
-
-
-    public void setClientPosition(int clientPosition) {
-        this.clientPosition = clientPosition;
-    }
-
-    public void setDestinationPosition(int destinationPosition) {
-        this.destinationPosition = destinationPosition;
-    }
 
     @Override
     public boolean equals(Object o) {

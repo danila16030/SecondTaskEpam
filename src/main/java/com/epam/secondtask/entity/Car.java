@@ -1,11 +1,12 @@
-package java.com.epam.secondtask.entity;
 
+package com.epam.secondtask.entity;
 
-import static java.lang.Thread.sleep;
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.atomic.AtomicBoolean;
 
-public class Car implements Runnable, UberUsers {
+public class Car implements Runnable,UberUsers {
     private int position;
-    private boolean withPassenger;
+    private AtomicBoolean withPassenger=new AtomicBoolean();
     private int time;
 
     public Car(int position) {
@@ -13,7 +14,7 @@ public class Car implements Runnable, UberUsers {
     }
 
 
-    public void setWithPassenger(boolean withPassenger) {
+    public void setWithPassenger(AtomicBoolean withPassenger) {
         this.withPassenger = withPassenger;
     }
 
@@ -21,7 +22,7 @@ public class Car implements Runnable, UberUsers {
         return position;
     }
 
-    public boolean isWithPassenger() {
+    public AtomicBoolean isWithPassenger() {
         return withPassenger;
     }
 
@@ -40,17 +41,17 @@ public class Car implements Runnable, UberUsers {
     @Override
     public int hashCode() {
         int result = position;
-        result = 31 * result + (withPassenger ? 1 : 0);
+        result = 31 * result + (withPassenger != null ? withPassenger.hashCode() : 0);
         result = 31 * result + time;
         return result;
     }
 
-    public void setTime(int time) {
-        this.time = time;
+    public AtomicBoolean getWithPassenger() {
+        return withPassenger;
     }
 
-    public void setPosition(int position) {
-        this.position = position;
+    public void setTime(int time) {
+        this.time = time;
     }
 
     @Override
@@ -64,14 +65,15 @@ public class Car implements Runnable, UberUsers {
 
     @Override
     public void run() {
-        withPassenger = true;
         int sleepTime = time;
+        withPassenger.set(true);
         System.out.println("Поехал");
         try {
-            sleep(sleepTime);
+            TimeUnit.MILLISECONDS.sleep(sleepTime);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
         System.out.println("Приехал");
+        withPassenger.set(false);
     }
 }

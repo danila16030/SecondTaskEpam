@@ -1,10 +1,10 @@
-package java.com.epam.secondtask.action;
+package com.epam.secondtask.action;
 
-import java.com.epam.secondtask.action.loading.LoadUberUsersAction;
-import java.com.epam.secondtask.entity.Dispatcher;
-import java.com.epam.secondtask.exception.FileIsEmptyException;
+import com.epam.secondtask.action.loading.LoadUberUsersAction;
+import com.epam.secondtask.entity.Dispatcher;
+import com.epam.secondtask.exception.FileIsEmptyException;
 
-import java.com.epam.secondtask.exception.TxtFileNotFoundException;
+import com.epam.secondtask.exception.TxtFileNotFoundException;
 
 public class Main {
     private static final String FILE_PATH = "data/info.txt";

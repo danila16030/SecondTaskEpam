@@ -1,4 +1,4 @@
-package java.com.epam.secondtask.action.loading;
+package com.epam.secondtask.action.loading;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

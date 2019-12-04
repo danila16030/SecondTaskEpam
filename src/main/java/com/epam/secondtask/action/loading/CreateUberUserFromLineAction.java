@@ -1,7 +1,7 @@
-package java.com.epam.secondtask.action.loading;
+package com.epam.secondtask.action.loading;
 
-import java.com.epam.secondtask.entity.Car;
-import java.com.epam.secondtask.entity.Client;
+import com.epam.secondtask.entity.Car;
+import com.epam.secondtask.entity.Client;
 
 public class CreateUberUserFromLineAction {
     public static final String SPLIT_REGEX = "\\s+";

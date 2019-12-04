@@ -1,4 +1,4 @@
-package java.com.epam.secondtask.pattern;
+package com.epam.secondtask.pattern;
 
 import java.util.regex.Pattern;
 

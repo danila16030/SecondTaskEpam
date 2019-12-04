@@ -1,11 +1,11 @@
-package java.com.epam.secondtask.action.loading;
+package com.epam.secondtask.action.loading;
 
-import java.com.epam.secondtask.entity.Car;
-import java.com.epam.secondtask.entity.Client;
-import java.com.epam.secondtask.entity.Dispatcher;
-import java.com.epam.secondtask.exception.FileIsEmptyException;
-import java.com.epam.secondtask.exception.TxtFileNotFoundException;
-import java.com.epam.secondtask.pattern.SetOfPatterns;
+import com.epam.secondtask.entity.Car;
+import com.epam.secondtask.entity.Client;
+import com.epam.secondtask.entity.Dispatcher;
+import com.epam.secondtask.exception.FileIsEmptyException;
+import com.epam.secondtask.exception.TxtFileNotFoundException;
+import com.epam.secondtask.pattern.SetOfPatterns;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -22,7 +22,6 @@ public class LoadUberUsersAction {
     private static Logger logger = LogManager.getLogger();
     private static CreateUberUserFromLineAction createUserFromLine = new CreateUberUserFromLineAction();
     private static LineValidationAction lineValidationAction = new LineValidationAction();
-
 
     public void loadUsersFromFile(String filePath) throws FileIsEmptyException,
             TxtFileNotFoundException {

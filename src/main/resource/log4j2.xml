@@ -4,7 +4,7 @@
         <property name="pattern_file">%d{HH:mm:ss.SSS} [%t] %-5level %logger{5} - %msg%n</property>
     </Properties>
     <Appenders>
-        <File name="FirstFile" fileName="src\java\resource\logs\app.log" bufferedIO="true">
+        <File name="FirstFile" fileName="src\main\resource\logs\app.log" bufferedIO="true">
             <PatternLayout pattern="${pattern_file}"/>
         </File>
     </Appenders>

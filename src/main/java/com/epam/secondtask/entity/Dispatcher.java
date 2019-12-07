@@ -36,6 +36,7 @@ public class Dispatcher implements Runnable {
                     new Thread(closerCar).start();
                 };
                 executor.execute(closerCar);
+                if(!closerCar.getWithPassenger().get());
                 logger.info("Car on the way" + closerCar.toString());
                 closerCar = null;
                 closerCar = new Car(Integer.MAX_VALUE);

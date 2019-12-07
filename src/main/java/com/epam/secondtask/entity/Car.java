@@ -58,7 +58,7 @@ public class Car implements Runnable,UberUsers {
     public String toString() {
         return "Car{" +
                 "position=" + position +
-                ", withPassenger=" + withPassenger +
+                ", withPassenger=" + withPassenger.get() +
                 ", time=" + time +
                 '}';
     }

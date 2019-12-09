@@ -6,3 +6,15 @@
 14:44:14.306 [main] INFO  com.epam.secondtask.entity.Dispatcher - Car on the wayCar{position=102, withPassenger=false, time=11632}
 14:44:14.307 [main] INFO  com.epam.secondtask.entity.Dispatcher - Car on the wayCar{position=103, withPassenger=false, time=11555}
 14:44:25.863 [main] INFO  com.epam.secondtask.entity.Dispatcher - Car on the wayCar{position=103, withPassenger=false, time=11840}
+08:13:38.125 [main] INFO  epam.secondtask.action.loading.LoadUberUsersAction - loading users from data/info.txt
+08:13:38.159 [main] INFO  com.epam.secondtask.entity.Dispatcher - Car on the wayCar{position=102, withPassenger=false, time=11632}
+08:13:38.159 [main] INFO  com.epam.secondtask.entity.Dispatcher - Car on the wayCar{position=103, withPassenger=false, time=11555}
+08:13:38.160 [main] INFO  com.epam.secondtask.entity.Dispatcher - Car on the wayCar{position=103, withPassenger=true, time=11840}
+08:13:56.384 [main] INFO  epam.secondtask.action.loading.LoadUberUsersAction - loading users from data/info.txt
+08:13:56.421 [main] INFO  com.epam.secondtask.entity.Dispatcher - Car on the wayCar{position=102, withPassenger=false, time=11632}
+08:13:56.422 [main] INFO  com.epam.secondtask.entity.Dispatcher - Car on the wayCar{position=103, withPassenger=false, time=11555}
+08:13:56.423 [main] INFO  com.epam.secondtask.entity.Dispatcher - Car on the wayCar{position=103, withPassenger=true, time=11840}
+08:14:32.922 [main] INFO  epam.secondtask.action.loading.LoadUberUsersAction - loading users from data/info.txt
+08:14:39.357 [main] INFO  com.epam.secondtask.entity.Dispatcher - Car on the wayCar{position=102, withPassenger=false, time=11632}
+08:14:44.212 [main] INFO  com.epam.secondtask.entity.Dispatcher - Car on the wayCar{position=103, withPassenger=false, time=11555}
+08:14:51.159 [main] INFO  com.epam.secondtask.entity.Dispatcher - Car on the wayCar{position=102, withPassenger=false, time=11725}
